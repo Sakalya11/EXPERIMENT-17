@@ -137,6 +137,9 @@ int main(){
 ```
 
 ## Code Output:
+![image](https://github.com/user-attachments/assets/c508f3be-1908-4ac6-a6be-f2000dc448cf)
+![image](https://github.com/user-attachments/assets/73b46b6b-8ede-4252-8463-973330352218)
+
 
 
 
