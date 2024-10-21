@@ -68,8 +68,76 @@ Here’s how you can implement a basic **Singly Linked List** in C++:
 This C++ code provides a simple implementation of a **singly linked list** with basic operations.
 
 ## Code
+```
+// program to implement Singly Linked list in C++ using class
 
-## Code Output
+#include<iostream>
+using namespace std;
+
+class Link {
+    public:
+    int data;
+    Link* next;
+
+    Link(int num){
+        data=num;
+        next=NULL;
+    }
+    /*void disp(){
+        cout<<data<<"   "<<next;
+    }*/
+};
+
+int main(){
+    Link* l1 = new Link(6);
+    cout<<l1->data<<"   "<<l1->next;
+    //l1.disp();
+}
+```
+
+```
+
+#include<iostream>
+using namespace std;
+
+class Link {
+    public:
+    int data;
+    Link* next;
+
+    Link(int num){
+        data=num;
+        next=NULL;
+    }
+};
+void insert_head(Link* &head, int data){
+    Link* new_node=new Link(data);
+    new_node->next = head;
+    head = new_node;
+}
+void disp(Link* head){
+    Link* temp = head;
+    while(temp!=NULL){
+        cout<<temp->data<<"->";
+        temp = temp->next;
+    }
+    cout<<"NULL"<<endl;
+}
+
+int main(){
+    Link* head = NULL;
+    insert_head(head, 30);
+    disp(head);
+    insert_head(head, 32);
+    disp(head);
+    insert_head(head, 35);
+    disp(head);
+    //l1.disp();
+}
+```
+
+## Code Output:
+
 
 
 
